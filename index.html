@@ -1,62 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
+    <title>Portfolio di [Il Tuo Nome]</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                Giosuè<span>Zanello</span>
-            </div>
-            <div class="links">
-                <div class="link"><a href="#">Home</a></div>
-                <div class="link"><a href="#">About</a></div>
-                <div class="link"><a href="#">Skills</a></div>
-                <div class="link"><a href="#">Service</a></div>
-                <div class="link"><a href="#">Contact Me</a></div>
-            </div>
+    <header>
+        <div class="hero">
+            <h1>Ciao, sono [Il Tuo Nome]</h1>
+            <p>Web Developer | Designer | Freelancer</p>
         </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Service</a>
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-        </div>
-    </nav>
+    </header>
 
-    <section>
-        <div class="main-container">
-            <div class="content">
-                <h1>There's <span>Giosuè</span></h1>
-                <div class="Typewriter">I'm a <span class="typewriter-text"></span></div>
-                <p>Testo di prova che immagino dovrò riempire con qualcosa che mi riguarda, di certo</p>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-discord"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-blogger"></i></a>
-                </div>
-                <div class="btn">
-                    <button>Download CV</button>
-                </div>
-            </div>
-            <div class="image">
-                <img src="image1.jpg" alt="Profile Image">
-            </div>
-        </div>
+    <section class="about">
+        <h2>Chi Sono</h2>
+        <p>Sono un appassionato di sviluppo web con esperienza in HTML, CSS, JavaScript e altro ancora. Amo creare siti web moderni e funzionali.</p>
     </section>
 
-    <script src="script.js"></script>
+    <section class="projects">
+        <h2>Progetti</h2>
+        <div class="project-card">
+            <h3>Progetto 1</h3>
+            <p>Descrizione del progetto 1.</p>
+        </div>
+        <div class="project-card">
+            <h3>Progetto 2</h3>
+            <p>Descrizione del progetto 2.</p>
+        </div>
+        <!-- Aggiungi altri progetti qui -->
+    </section>
+
+    <section class="contact">
+        <h2>Contattami</h2>
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Il Tuo Nome]. Tutti i diritti riservati.</p>
+    </footer>
 </body>
 </html>
